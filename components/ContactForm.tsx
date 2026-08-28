@@ -31,21 +31,21 @@ export function ContactForm() {
       <div className="form-row">
         <div className="field">
           <label htmlFor="name">Name</label>
-          <input id="name" name="name" required />
+          <input id="name" name="name" autoComplete="name" required />
         </div>
         <div className="field">
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" type="email" required />
+          <input id="email" name="email" type="email" autoComplete="email" inputMode="email" required />
         </div>
       </div>
       <div className="form-row">
         <div className="field">
           <label htmlFor="org">Organisation</label>
-          <input id="org" name="organisation" />
+          <input id="org" name="organisation" autoComplete="organization" />
         </div>
         <div className="field">
           <label htmlFor="phone">Phone</label>
-          <input id="phone" name="phone" />
+          <input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" />
         </div>
       </div>
       <div className="field">

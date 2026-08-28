@@ -55,6 +55,12 @@ export default async function PracticePage({ params }: Props) {
             </div>
           </div>
         </header>
+        {practice.image ? (
+          <div className="practice-hero-visual">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={practice.image} alt={practice.name} />
+          </div>
+        ) : null}
 
         <div className="practice-body">
           <div className="practice-intro">

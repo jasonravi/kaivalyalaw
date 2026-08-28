@@ -18,13 +18,27 @@ export function Navbar({ overlay = false }: { overlay?: boolean }) {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    document.documentElement.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
   return (
     <>
-      <header className={`nav ${solid || open ? "solid" : ""}`}>
+      <header className={`nav ${solid || open ? "solid" : ""} ${open ? "is-open" : ""}`}>
         <div className="nav-inner">
-          <Link className="brand" href="/">
+          <Link className="brand" href="/" onClick={() => setOpen(false)}>
             <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
               <rect width="32" height="32" rx="7" fill="#101820" />
               <circle cx="16" cy="16" r="12.2" fill="none" stroke="#B48A5A" strokeWidth="1.35" />
@@ -44,31 +58,41 @@ export function Navbar({ overlay = false }: { overlay?: boolean }) {
           </nav>
           <div className="nav-right">
             <span className="lang">EN</span>
-            <Link className="btn" href="/contact">
+            <Link className="btn nav-cta" href="/contact">
               Speak With Us
             </Link>
             <button
               className="menu-toggle"
-              aria-label="Open menu"
-              onClick={() => setOpen(true)}
+              type="button"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              aria-controls="site-menu"
+              onClick={() => setOpen((value) => !value)}
             >
               <span />
             </button>
           </div>
         </div>
       </header>
-      <div className={`mobile-menu ${open ? "open" : ""}`}>
-        <button className="btn btn-light" onClick={() => setOpen(false)} type="button">
-          Close
-        </button>
-        {site.nav.map((item) => (
-          <Link key={item.href} href={item.href} onClick={() => setOpen(false)}>
-            {item.label}
+      <div className={`mobile-menu ${open ? "open" : ""}`} id="site-menu">
+        <nav className="mobile-menu-nav" aria-label="Mobile">
+          {site.nav.map((item, index) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="mobile-menu-link"
+              onClick={() => setOpen(false)}
+            >
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="mobile-menu-foot">
+          <Link className="btn btn-fill" href="/contact" onClick={() => setOpen(false)}>
+            Speak With Us
           </Link>
-        ))}
-        <Link href="/contact" onClick={() => setOpen(false)}>
-          Speak With Us
-        </Link>
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 import { Button, SectionLabel } from "@/components/Button";
-import { LocationStrip, LogoMarquee } from "@/components/LocationStrip";
+import { LogoMarquee } from "@/components/LocationStrip";
 import { Navbar } from "@/components/Navbar";
 import { PracticeIndex } from "@/components/PracticeIndex";
 import { PeopleSection } from "@/components/PeopleSection";
@@ -21,7 +21,6 @@ export default function HomePage() {
           <img src="/hero/kaivalya-hall-cinematic.png" alt="Kaivalya Law" />
         </div>
         <div className="hero-copy">
-          <p className="label">Prayagraj · Uttar Pradesh · India</p>
           <h1>
             Law without borders.
             <br />
@@ -72,7 +71,6 @@ export default function HomePage() {
               <Button href="/about">About the firm →</Button>
             </div>
           </div>
-          <LocationStrip />
         </div>
       </section>
 
@@ -89,6 +87,9 @@ export default function HomePage() {
             </p>
           </div>
           <PracticeIndex />
+          <div className="practice-home-more">
+            <Button href="/expertise">All practice areas →</Button>
+          </div>
         </div>
       </section>
 
@@ -128,11 +129,6 @@ export default function HomePage() {
             <p className="lede" style={{ color: "rgba(245,241,232,0.7)", marginTop: 16 }}>
               {firm.intro[0]}
             </p>
-            <div className="reach-pills">
-              <span>India</span>
-              <span>Prayagraj</span>
-              <span>Uttar Pradesh</span>
-            </div>
             <p className="office-address">
               {site.headquarters.lines.map((line) => (
                 <span key={line}>{line}</span>

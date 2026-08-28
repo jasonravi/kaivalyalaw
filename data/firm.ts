@@ -10,11 +10,6 @@ export const firm = {
     "Kaivalya Law provides legal services to multi-national corporations, government authorities, NGOs, financial institutions, funds, angel-investors, start-ups and individuals. Our clientele comprises leading multi-national corporations, including Fortune India 500 companies and national governments among others.",
   philosophy:
     "A venture built of relationships and certitude, we endeavour to create a benchmark for efficiency and technical expertise in the legal arena.",
-  locations: [
-    { region: "COUNTRY", city: "INDIA" },
-    { region: "CITY", city: "PRAYAGRAJ" },
-    { region: "STATE", city: "UTTAR PRADESH" },
-  ],
   sectors: [
     "Film & Media",
     "Energy",

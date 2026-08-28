@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
@@ -24,6 +24,17 @@ export const metadata: Metadata = {
   },
   description:
     "Kaivalya Law is a premium legal practice in Prayagraj, Uttar Pradesh, advising on complex transactions, disputes and regulatory matters.",
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#101820",
+  colorScheme: "light",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

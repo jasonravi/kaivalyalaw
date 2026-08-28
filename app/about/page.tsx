@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Breadcrumb, PageHero } from "@/components/PageHero";
 import { Button } from "@/components/Button";
-import { LocationStrip } from "@/components/LocationStrip";
 import { firm } from "@/data/firm";
 
 export const metadata: Metadata = { title: "About" };
@@ -33,7 +32,6 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
-          <LocationStrip />
           <div style={{ marginTop: 48 }}>
             <Button href="/people">Meet the practice →</Button>
           </div>

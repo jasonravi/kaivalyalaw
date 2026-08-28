@@ -3,7 +3,6 @@ import { people } from "./people";
 export const site = {
   name: "Kaivalya Law",
   tagline: "Law without borders. Counsel without compromise.",
-  locationLine: "Prayagraj · Uttar Pradesh · India",
   headquarters: {
     city: "Prayagraj",
     state: "Uttar Pradesh",

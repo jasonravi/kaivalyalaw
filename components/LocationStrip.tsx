@@ -1,18 +1,5 @@
 import { firm } from "@/data/firm";
 
-export function LocationStrip() {
-  return (
-    <div className="firm-places">
-      {firm.locations.map((item) => (
-        <article className="firm-place" key={item.city}>
-          <p className="label">{item.region}</p>
-          <strong>{item.city}</strong>
-        </article>
-      ))}
-    </div>
-  );
-}
-
 export function LogoMarquee() {
   const row = [...firm.sectorLogos, ...firm.sectorLogos];
   return (

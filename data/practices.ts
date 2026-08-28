@@ -98,6 +98,8 @@ export const practices: Practice[] = [
       "The firm has represented leading players in film and media, advertising, sports management and e-sports on disputes, contracts and regulatory questions.",
     related: ["intellectual-property", "commercial-contracts", "dispute-resolution-arbitration"],
     people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetabh-sharma"],
+    image:
+      "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=2200&q=85",
   },
   {
     slug: "foreign-investment",
