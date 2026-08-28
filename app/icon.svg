@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Kaivalya Law">
+  <rect width="32" height="32" rx="7" fill="#101820"/>
+  <circle cx="16" cy="16" r="12.2" fill="none" stroke="#B48A5A" stroke-width="1.35"/>
+  <path fill="#F5F1E8" d="M11.2 8.2h3.05v6.15l5.55-6.15h3.7l-6.35 6.85 6.85 8.95h-3.85l-5.9-7.85v7.85H11.2V8.2z"/>
+</svg>
