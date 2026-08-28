@@ -5,19 +5,21 @@ import { Breadcrumb } from "@/components/PageHero";
 import { Button } from "@/components/Button";
 import { formatPhone, getPerson, people, telHref } from "@/data/people";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return people.map((person) => ({ slug: person.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const person = getPerson(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const person = getPerson(slug);
   return { title: person?.name ?? "Profile" };
 }
 
-export default function PersonPage({ params }: Props) {
-  const person = getPerson(params.slug);
+export default async function PersonPage({ params }: Props) {
+  const { slug } = await params;
+  const person = getPerson(slug);
   if (!person) notFound();
   const intro = person.biography[0];
   const closing = person.biography.slice(1);

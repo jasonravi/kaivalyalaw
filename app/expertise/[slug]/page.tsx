@@ -7,18 +7,20 @@ import { Button } from "@/components/Button";
 import { getPractice, practices } from "@/data/practices";
 import { getPerson, people } from "@/data/people";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return practices.map((item) => ({ slug: item.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  return { title: getPractice(params.slug)?.name ?? "Practice" };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  return { title: getPractice(slug)?.name ?? "Practice" };
 }
 
-export default function PracticePage({ params }: Props) {
-  const practice = getPractice(params.slug);
+export default async function PracticePage({ params }: Props) {
+  const { slug } = await params;
+  const practice = getPractice(slug);
   if (!practice) notFound();
   const relatedPeople = practice.people.map(getPerson).filter(Boolean);
   const shownPeople = relatedPeople.length ? relatedPeople : people;

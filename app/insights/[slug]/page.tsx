@@ -5,18 +5,20 @@ import { Breadcrumb, PageHero } from "@/components/PageHero";
 import { Button } from "@/components/Button";
 import { articles, getArticle } from "@/data/insights";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return articles.map((item) => ({ slug: item.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  return { title: getArticle(params.slug)?.title ?? "Article" };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  return { title: getArticle(slug)?.title ?? "Article" };
 }
 
-export default function ArticlePage({ params }: Props) {
-  const article = getArticle(params.slug);
+export default async function ArticlePage({ params }: Props) {
+  const { slug } = await params;
+  const article = getArticle(slug);
   if (!article) notFound();
 
   return (
