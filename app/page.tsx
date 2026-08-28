@@ -5,6 +5,7 @@ import { PracticeIndex } from "@/components/PracticeIndex";
 import { PeopleSection } from "@/components/PeopleSection";
 import { ContactSuite } from "@/components/ContactSuite";
 import { ArticleCard } from "@/components/ArticleCard";
+import { ForumsOfPractice, PracticeAreasPath } from "@/components/PracticeShowcase";
 import { OfficeMap } from "@/components/WorldMap";
 import { firm } from "@/data/firm";
 import { featuredArticles } from "@/data/insights";
@@ -155,6 +156,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <PracticeAreasPath />
+      <ForumsOfPractice />
 
       <section className="probono-strip">
         <div className="wide">
