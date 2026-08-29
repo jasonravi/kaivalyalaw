@@ -107,7 +107,7 @@ export const practices: Practice[] = [
     name: "Foreign Investment",
     short: "Inbound and outbound investment, policy and cross-border structuring.",
     overview:
-      "We assist clients on inbound and outbound investment, policy and structuring — with local insight and a sophisticated reading of how capital and regulation meet.",
+      "We assist clients on inbound and outbound investment, policy and structuring — with a command of Indian law and a sophisticated reading of how capital and regulation meet.",
     approach:
       "Investment questions are legal and political. We read the policy as it is written, then map the practical approval path.",
     capabilities: [

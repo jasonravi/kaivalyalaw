@@ -9,15 +9,20 @@ export function Footer() {
         <div className="footer-grid">
           <div>
             <p className="footer-brand">Kaivalya Law</p>
-            <p className="footer-heading">Office Address</p>
-            <p className="footer-address">
-              {site.headquarters.lines.map((line) => (
-                <span key={line}>
-                  {line}
-                  <br />
-                </span>
+            <p className="footer-heading">Offices</p>
+            <div className="footer-offices">
+              {site.offices.map((office) => (
+                <p className="footer-address" key={office.city}>
+                  <strong>{office.city}</strong>
+                  {office.lines.map((line) => (
+                    <span key={line}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
               ))}
-            </p>
+            </div>
           </div>
 
           <div>

@@ -19,11 +19,11 @@ const sans = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Kaivalya Law — International Law Firm",
+    default: "Kaivalya Law — Counsel across India",
     template: "%s · Kaivalya Law",
   },
   description:
-    "Kaivalya Law is a premium legal practice in Prayagraj, Uttar Pradesh, advising on complex transactions, disputes and regulatory matters.",
+    "Kaivalya Law is a premium legal practice advising clients across India on complex transactions, disputes and regulatory matters.",
   formatDetection: {
     telephone: false,
   },

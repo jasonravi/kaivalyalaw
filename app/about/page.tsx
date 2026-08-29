@@ -13,8 +13,8 @@ export default function AboutPage() {
       <PageHero label="The firm" title={<>More than legal counsel.</>}>
         <Breadcrumb items={[{ href: "/", label: "Home" }, { label: "About" }]} />
         <p className="lede" style={{ marginTop: 24 }}>
-          {firm.philosophy} Rooted in Prayagraj, Uttar Pradesh — local insight, strategic
-          legal thinking, and a view that reaches beyond borders.
+          {firm.philosophy} A pan-India practice — strategic legal thinking, and counsel
+          that appears across courts and tribunals of the country.
         </p>
       </PageHero>
       <section className="section" style={{ paddingTop: 0 }}>

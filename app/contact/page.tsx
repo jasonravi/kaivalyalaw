@@ -14,7 +14,7 @@ export default function ContactPage() {
           <img src="/hero/kaivalya-hall-cinematic.png" alt="" />
         </div>
         <div className="contact-mast-copy">
-          <p className="label">Prayagraj · Uttar Pradesh · India</p>
+          <p className="label">Pan-India practice · India</p>
           <h1>
             Let’s talk about
             <br />

@@ -28,8 +28,8 @@ export default function HomePage() {
             Counsel without compromise.
           </h1>
           <p className="lede">
-            Strategic legal counsel from Prayagraj — local insight, sophisticated
-            thinking, and a clear path through complex matters.
+            Strategic legal counsel across India — sophisticated thinking, and a
+            clear path through complex matters.
           </p>
           <div className="hero-actions">
             <Button href="/contact" fill>
@@ -52,8 +52,8 @@ export default function HomePage() {
           <span>Practice areas</span>
         </article>
         <article>
-          <strong>UP</strong>
-          <span>Rooted in Prayagraj</span>
+          <strong>IN</strong>
+          <span>Across India</span>
         </article>
       </section>
 
@@ -121,20 +121,25 @@ export default function HomePage() {
       <section className="section section-ink location-band">
         <div className="wide location-split">
           <div>
-            <SectionLabel>05 — Location</SectionLabel>
+            <SectionLabel>05 — Presence</SectionLabel>
             <h2 style={{ marginTop: 16 }}>
-              Rooted in Prayagraj.
+              Counsel across India.
               <br />
-              Connected to the world.
+              Courts across the country.
             </h2>
             <p className="lede" style={{ color: "rgba(245,241,232,0.7)", marginTop: 16 }}>
               {firm.intro[0]}
             </p>
-            <p className="office-address">
-              {site.headquarters.lines.map((line) => (
-                <span key={line}>{line}</span>
+            <div className="office-address-list">
+              {site.offices.map((office) => (
+                <p className="office-address" key={office.city}>
+                  <strong>{office.city}</strong>
+                  {office.lines.map((line) => (
+                    <span key={line}>{line}</span>
+                  ))}
+                </p>
               ))}
-            </p>
+            </div>
           </div>
           <OfficeMap />
         </div>

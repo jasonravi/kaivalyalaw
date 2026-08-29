@@ -2,9 +2,9 @@ export const firm = {
   statement:
     "Complex matters require more than legal knowledge. They require perspective.",
   intro: [
-    "Kaivalya Law provides strategic legal counsel from Prayagraj, Uttar Pradesh, combining strong local understanding with a modern, sophisticated approach to complex legal matters.",
-    "Rooted in Uttar Pradesh. Thinking beyond borders. The firm advises businesses, institutions and individuals across transactions, disputes and regulatory questions with precision and perspective.",
-    "Local insight. Strategic legal thinking. Clients receive counsel that is commercially aware, carefully prepared and confident in its execution.",
+    "Kaivalya Law provides strategic legal counsel across India, combining a close command of Indian law with a modern, sophisticated approach to complex legal matters.",
+    "The firm appears before courts, tribunals and forums nationwide. We advise businesses, institutions and individuals across transactions, disputes and regulatory questions with precision and perspective.",
+    "National reach. Strategic legal thinking. Clients receive counsel that is commercially aware, carefully prepared and confident in its execution.",
   ],
   clients:
     "Kaivalya Law provides legal services to multi-national corporations, government authorities, NGOs, financial institutions, funds, angel-investors, start-ups and individuals. Our clientele comprises leading multi-national corporations, including Fortune India 500 companies and national governments among others.",
@@ -40,7 +40,7 @@ export const firm = {
     {
       number: "01",
       title: "Insight",
-      text: "Rooted in Uttar Pradesh, the practice brings a close reading of Indian law together with a modern, sophisticated approach to complex matters.",
+      text: "The practice appears across India — before the Supreme Court, High Courts, tribunals and district forums — with a close reading of Indian law and a modern approach to complex matters.",
     },
     {
       number: "02",
@@ -66,8 +66,8 @@ export const firm = {
     },
     {
       label: "Outlook",
-      title: "Rooted in Uttar Pradesh. Thinking beyond borders.",
-      text: "From Prayagraj, the firm advises on matters that demand both a command of Indian law and a view of how strategy travels. We do not claim a catalogue of offices; we claim careful counsel with reach.",
+      title: "Counsel across India. Thinking beyond the brief.",
+      text: "The firm advises on matters before courts and tribunals nationwide. We do not confine the practice to one city; we claim careful counsel with national reach.",
     },
     {
       label: "Expertise",

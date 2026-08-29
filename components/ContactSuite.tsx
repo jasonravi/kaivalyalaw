@@ -1,10 +1,7 @@
 import { SectionLabel } from "@/components/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { formatPhone, people, telHref } from "@/data/people";
-import { site } from "@/data/site";
-
-const { lat, lng } = site.headquarters.coords;
-const mapsUrl = `https://www.google.com/maps?q=${lat},${lng}`;
+import { officeMapsUrl, site } from "@/data/site";
 
 export function ContactSuite({
   numbered = false,
@@ -17,7 +14,7 @@ export function ContactSuite({
     <>
       <section className="section section-ink contact-block" id="contact">
         <div className="wide">
-          <SectionLabel>{numbered ? "07 — Contact" : "The office"}</SectionLabel>
+          <SectionLabel>{numbered ? "07 — Contact" : "Offices"}</SectionLabel>
           {lead ? (
             <>
               <h2>
@@ -32,22 +29,33 @@ export function ContactSuite({
             </>
           ) : (
             <h2>
-              The partnership
+              The practice
               <br />
-              is in Prayagraj.
+              appears across India.
             </h2>
           )}
 
           <div className="contact-grid">
             <div className="contact-plaque">
               <p className="label">Visit</p>
-              <p className="contact-city">{site.headquarters.city}</p>
-              {site.headquarters.lines.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-              <a className="contact-map" href={mapsUrl} target="_blank" rel="noreferrer">
-                Open in maps →
-              </a>
+              <div className="office-entries">
+                {site.offices.map((office) => (
+                  <article className="office-entry" key={office.city}>
+                    <p className="contact-city">{office.city}</p>
+                    {office.lines.map((line) => (
+                      <p key={line}>{line}</p>
+                    ))}
+                    <a
+                      className="contact-map"
+                      href={officeMapsUrl(office)}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open in maps →
+                    </a>
+                  </article>
+                ))}
+              </div>
             </div>
 
             <div className="contact-write">

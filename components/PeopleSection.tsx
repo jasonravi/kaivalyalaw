@@ -37,8 +37,8 @@ export function PeopleSection({
                 Partners
               </span>
               <span>
-                <strong>UP</strong>
-                Prayagraj
+                <strong>IN</strong>
+                Across India
               </span>
             </div>
             <Button href="/people">Meet the partnership →</Button>
