@@ -31,7 +31,7 @@ export const practices: Practice[] = [
     experience:
       "The firm advises banks, financial institutions and corporates on lending, recovery, regulatory questions and financial disputes — with an emphasis on speed, confidentiality and a clear commercial outcome.",
     related: ["dispute-resolution-arbitration", "insolvency-restructuring", "commercial-contracts"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=85",
   },
@@ -53,7 +53,7 @@ export const practices: Practice[] = [
     experience:
       "The team has advised on collaboration and shareholders’ arrangements and handled civil and contract disputes, including overseas contractual breach.",
     related: ["mergers-acquisitions", "dispute-resolution-arbitration", "foreign-investment"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2200&q=85",
   },
@@ -75,7 +75,7 @@ export const practices: Practice[] = [
     experience:
       "The team appears before the Supreme Court, High Courts and specialised agencies, and handles commercial litigation, arbitration and the challenge and enforcement of awards.",
     related: ["banking-finance", "insolvency-restructuring", "commercial-contracts"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2200&q=85",
   },
@@ -97,7 +97,7 @@ export const practices: Practice[] = [
     experience:
       "The firm has represented leading players in film and media, advertising, sports management and e-sports on disputes, contracts and regulatory questions.",
     related: ["intellectual-property", "commercial-contracts", "dispute-resolution-arbitration"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=2200&q=85",
   },
@@ -119,7 +119,7 @@ export const practices: Practice[] = [
     experience:
       "The firm publishes analysis of India’s FDI policy, including the 2020 consolidated policy and digital news and media caps. The work is rooted in Indian law, with a view to how investment questions travel.",
     related: ["mergers-acquisitions", "private-equity-venture-capital", "commercial-contracts"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?auto=format&fit=crop&w=2200&q=85",
   },
@@ -141,7 +141,7 @@ export const practices: Practice[] = [
     experience:
       "The firm’s publications include analysis of decree holders as financial creditors under the IBC and confidentiality issues in the insolvency process.",
     related: ["banking-finance", "dispute-resolution-arbitration", "mergers-acquisitions"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2200&q=85",
   },
@@ -163,7 +163,7 @@ export const practices: Practice[] = [
     experience:
       "The firm advises on trademark and copyright portfolios for corporations and start-ups, and has published on phonetically generic marks and the Trademark Clearing House.",
     related: ["film-media-broadcast", "commercial-contracts", "dispute-resolution-arbitration"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=2200&q=85",
   },
@@ -185,7 +185,7 @@ export const practices: Practice[] = [
     experience:
       "The firm provides transactional and advisory services to multi-national corporations, funds, angel investors and start-ups. Counsel have advised on collaboration and shareholders’ agreements for significant projects.",
     related: ["foreign-investment", "private-equity-venture-capital", "commercial-contracts"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2200&q=85",
   },
@@ -207,7 +207,7 @@ export const practices: Practice[] = [
     experience:
       "Kaivalya Law provides legal services to funds, angel investors and start-ups alongside multi-national corporations and financial institutions.",
     related: ["foreign-investment", "mergers-acquisitions", "commercial-contracts"],
-    people: ["manish-tiwari", "akhand-pratap-tripathi", "shwetab-sharma"],
+    people: ["manish-tiwari", "akhand-pratap-tripathi", "swetabh-sharma"],
     image:
       "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2200&q=85",
   },
