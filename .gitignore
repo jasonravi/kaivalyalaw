@@ -8,6 +8,8 @@ node_modules/
 .next/
 out/
 .swc/
+.open-next/
+.wrangler/
 
 # production
 build/

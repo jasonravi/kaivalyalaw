@@ -13,6 +13,8 @@ export function generateStaticParams() {
   return practices.map((item) => ({ slug: item.slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   return { title: getPractice(slug)?.name ?? "Practice" };

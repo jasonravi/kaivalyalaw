@@ -11,6 +11,8 @@ export function generateStaticParams() {
   return articles.map((item) => ({ slug: item.slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   return { title: getArticle(slug)?.title ?? "Article" };
